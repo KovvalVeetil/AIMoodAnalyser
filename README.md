@@ -63,8 +63,6 @@ Request
 Content-Type: application/json
 Body:
 
-json
-Copy code
 {
   "text": "I love programming!"
 }
@@ -73,32 +71,14 @@ Response
 Content-Type: application/json
 Success Response:
 
-json
-Copy code
 {
   "sentiment": "POSITIVE"
 }
 Error Response:
 
-json
-Copy code
 {
   "error": "Unable to analyze sentiment"
 }
-```
-HTTP Status Codes:
-```bash
-200 OK: Sentiment analysis successful.
-422 Unprocessable Entity: Invalid input or analysis failure.
-Configuration
-API Key: Ensure that the HUGGINGFACE_API_KEY environment variable is set with a valid Hugging Face API key.
-Model Endpoint: The current setup uses the distilbert-base-uncased-finetuned-sst-2-english model. You can change this by modifying the endpoint URL in app/controllers/sentiments_controller.rb.
-Testing
-You can test the API using tools like Postman or cURL. Example cURL command:
-```
-```bash
-
-curl -X POST http://localhost:3000/api/v1/sentiments/analyze -d '{"text":"I love programming!"}' -H "Content-Type: application/json"
 ```
 
 Flow Diagrams
