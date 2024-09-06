@@ -28,7 +28,11 @@ Ensure you have Bundler installed, then run:
 ```bash
 bundle install
 ```
-Set Up Environment Variables
+```bash
+pip install transformers torch
+bin/rails db:create
+bin/rails db:migrate
+```
 
 Create a .env file in the root directory and add your Hugging Face API key:
 
@@ -90,15 +94,4 @@ graph TD
     B --> C[Sentiment Analysis]
     C --> D[Response]
     D --> E[User Receives Sentiment]
-```
-
-```bash
-2. Deployment Flow
-
-graph TD
-    A[Local Development] --> B[Push to GitHub]
-    B --> C[Heroku Deployment]
-    C --> D[Set Environment Variables]
-    D --> E[Heroku App Running]
-
 ```
