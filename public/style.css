@@ -1,0 +1,49 @@
+/* styles.css */
+
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif; /* Sets a clean, sans-serif font for the page */
+    display: flex; /* Uses Flexbox to align items */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    height: 100vh; /* Makes the body take up the full height of the viewport */
+    background-color: #f0f8ff; /* Sets a light background color */
+    margin: 0; /* Removes default margin */
+  }
+  
+  /* Container styling */
+  .container {
+    text-align: center; /* Centers text inside the container */
+  }
+  
+  /* Animation box styling */
+  .animation-box {
+    width: 100px; /* Sets the width of the box */
+    height: 100px; /* Sets the height of the box */
+    background-color: #ff6347; /* Sets a background color (Tomato) */
+    margin: 20px auto; /* Centers the box horizontally with a top and bottom margin */
+    border-radius: 10px; /* Rounds the corners of the box */
+    transition: transform 0.5s ease; /* Smoothly transitions the transform property over 0.5 seconds */
+  }
+  
+  /* Animation effect */
+  .animate {
+    transform: scale(1.5) rotate(360deg); /* Scales the box to 1.5 times its size and rotates it 360 degrees */
+  }
+  
+  /* Button styling */
+  button {
+    padding: 10px 20px; /* Adds padding inside the button */
+    font-size: 16px; /* Sets the font size */
+    background-color: #4caf50; /* Sets a green background color */
+    color: white; /* Sets the text color to white */
+    border: none; /* Removes the default border */
+    border-radius: 5px; /* Rounds the corners of the button */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+  }
+  
+  /* Button hover effect */
+  button:hover {
+    background-color: #45a049; /* Changes the background color to a darker green on hover */
+  }
+  
